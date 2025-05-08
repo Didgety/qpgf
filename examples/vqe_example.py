@@ -2,11 +2,14 @@ import sys
 import os
 import matplotlib.pyplot as plt
 
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-REPO_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
-sys.path.insert(0, REPO_ROOT)
+# CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+# REPO_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+# sys.path.insert(0, REPO_ROOT)
 
-# Example: Run PGF model on a small VQE circuit
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+# Example: Run PGF model on the H2 ansatz circuit
+# This example demonstrates how to use the qpgf library to analyze a quantum circuit
 
 from qpgf.parser import parse_qasm, translate_to_basis
 from qpgf.error_model import load_error_rates

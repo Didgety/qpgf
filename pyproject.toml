@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qpgf"
+version = "1.0.0"
+description = "Model quantum circuit error distributions using probability generating functions (PGFs)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name="Jai Veilleux", email="jai.veilleux@uvm.edu" }
+]
+
+keywords = ["quantum", "error", "pgf", "ibm", "qiskit", "simulation", "visualization"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "qiskit>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Didgety/qpgf"
+Source = "https://github.com/Didgety/qpgf"
+Issues = "https://github.com/Didgety/qpgf/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
