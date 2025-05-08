@@ -27,7 +27,7 @@ pip install -e .
 --- 
 ### 📂 Project Structure
 
-```c
+```
 qpgf/
 ├── src/
 │   └── qpgf/                ← Library
