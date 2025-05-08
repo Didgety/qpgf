@@ -32,8 +32,8 @@ qpgf/
 ├── src/
 │   └── qpgf/                ← Library
 │       ├── __init__.py
-│       ├── parser.py
 │       ├── error_model.py
+│       ├── parser.py
 │       ├── pgf.py
 │       ├── plot.py
 │       └── utils.py
@@ -42,9 +42,9 @@ qpgf/
 │   └── data/               ← Sample IBM data
 │       ├── ibm_eagle.csv
 │       └── ibm_heron.csv
-├── pyproject.toml
+├── LICENSE
 ├── README.md
-└── LICENSE
+└── pyproject.toml
 ```
 
 --- 
